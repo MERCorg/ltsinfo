@@ -1,0 +1,21 @@
+[package]
+name = "ltsinfo-io"
+version.workspace = true
+rust-version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ltsinfo-lts.workspace = true
+ltsinfo-utilities.workspace = true
+
+bitstream-io.workspace = true
+log.workspace = true
+regex.workspace = true
+rustc-hash.workspace = true
+streaming-iterator.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+test-log.workspace = true
+test-case.workspace = true
+env_logger.workspace = true

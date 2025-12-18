@@ -1,0 +1,45 @@
+[profile.release]
+lto = "thin"
+
+[profile.bench]
+debug = "line-tables-only"
+
+[workspace]
+resolver = "2"
+members = [
+    "crates/*",
+    "tools/*",
+]
+
+[workspace.package]
+edition = "2021"
+license = "BSL-1.0"
+rust-version = "1.80.1"
+version = "0.1.0"
+
+[workspace.dependencies]
+ahash = "0.8"
+anyhow = { version = "1.0", features = ["backtrace"] }
+bitstream-io = "2.6"
+bumpalo = "3.17"
+clap = { version = "4.5", features = ["derive"] }
+env_logger = { version = "0.11", features = ["unstable-kv"] }
+indoc = "2.0"
+itertools = "0.14"
+log = { version = "0.4", features = ["kv"] }
+rand = "0.9"
+regex = "1.11"
+rustc-hash = "2.1"
+smallvec = "1.13"
+streaming-iterator = "0.1"
+test-case = "3.3"
+test-log = "0.2"
+thiserror = "2.0"
+tikv-jemallocator = "0.6"
+
+# The workspace libraries.
+ltsinfo-io = { path = "crates/io" }
+ltsinfo-lts = { path = "crates/lts" }
+ltsinfo-reduction = { path = "crates/reduction" }
+ltsinfo-unsafety = { path = "crates/unsafety" }
+ltsinfo-utilities = { path = "crates/utilities" }

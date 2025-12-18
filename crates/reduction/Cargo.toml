@@ -1,0 +1,20 @@
+[package]
+name = "ltsinfo-reduction"
+version.workspace = true
+rust-version.workspace = true
+edition.workspace = true
+
+[dependencies]
+ltsinfo-io.workspace = true
+ltsinfo-lts.workspace = true
+ltsinfo-utilities.workspace = true
+
+bumpalo.workspace = true
+env_logger.workspace = true
+log.workspace = true
+rand.workspace = true
+rustc-hash.workspace = true
+
+[dev-dependencies]
+test-case.workspace = true
+test-log.workspace = true

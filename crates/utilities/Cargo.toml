@@ -1,0 +1,10 @@
+[package]
+name = "ltsinfo-utilities"
+version.workspace = true
+rust-version.workspace = true
+edition.workspace = true
+
+[dependencies]
+rand.workspace = true
+test-log.workspace = true
+log.workspace = true
