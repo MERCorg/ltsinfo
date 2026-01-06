@@ -7,7 +7,7 @@ This repository contains a command-line tool for performing signature-based bran
 The tool can be compiled and ran using the following command:
 
 ```bash
-    cargo run --release --bin ltsinfo -- reduce <reduction_type> <INPUT_FILE> <OUTFILE_FILE>
+    cargo run --release --bin ltsinfo -- <reduction_type> <INPUT_FILE> <OUTFILE_FILE>
 ```
 
 Where `<INPUT_FILE>` is the path to the input LTS file. Use the `--help` flag to see all available options. Dependencies are automatically downloaded by `cargo`.
